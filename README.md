@@ -71,32 +71,14 @@ A Etapa 6 contém as seguintes consultas:
 ```text
 .
 ├── README.md
-├── projeto_etapa6_completo.sql
-├── g8_sql_corrigido.sql
-├── meus_inserts_corrigido.sql
-├── consultas_etapa6.sql
-├── relatorio_etapa6.docx
-└── etapa6_resultados/
-    ├── consulta_01.png
-    ├── consulta_02.png
-    ├── consulta_03.png
-    ├── consulta_04.png
-    ├── consulta_05.png
-    ├── consulta_06.png
-    ├── consulta_07.png
-    ├── consulta_08.png
-    ├── consulta_09.png
-    └── consulta_10.png
+├── LICENSE
+├── g8 completo com os inserts.sql
+
 ```
 
 ### Descrição dos arquivos
 
-- `projeto_etapa6_completo.sql`: cria o banco, insere os dados de exemplo e executa as consultas da Etapa 6.
-- `g8_sql_corrigido.sql`: contém a estrutura do banco, suas restrições, índices e sequências.
-- `meus_inserts_corrigido.sql`: contém os dados utilizados para testar o banco.
-- `consultas_etapa6.sql`: contém somente as dez consultas solicitadas na etapa.
-- `relatorio_etapa6.docx`: relatório com a descrição, o código SQL e o resultado de cada consulta.
-- `etapa6_resultados/`: imagens dos resultados obtidos no PostgreSQL.
+- `g8 completo com os inserts.sql`: cria o banco, insere os dados de exemplo e executa as consultas da Etapa 6.
 
 ## Como executar
 
@@ -115,21 +97,19 @@ createdb -U postgres streaming_audio
 Execute o arquivo completo:
 
 ```bash
-psql -U postgres -d streaming_audio -f projeto_etapa6_completo.sql
+psql -U postgres -d streaming_audio -f g8 completo com os inserts.sql
 ```
 
 ### Opção 2 — Executar cada etapa separadamente
 
 ```bash
-psql -U postgres -d streaming_audio -f g8_sql_corrigido.sql
-psql -U postgres -d streaming_audio -f meus_inserts_corrigido.sql
-psql -U postgres -d streaming_audio -f consultas_etapa6.sql
+psql -U postgres -d streaming_audio -f g8 completo com os inserts.sql
 ```
 
 Em um servidor remoto, substitua o usuário, o host e o nome do banco:
 
 ```bash
-psql -U seu_usuario -h seu_host -d seu_banco -f projeto_etapa6_completo.sql
+psql -U seu_usuario -h seu_host -d seu_banco -f g8 completo com os inserts.sql
 ```
 
 ## Resultados das consultas
